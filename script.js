@@ -1,25 +1,18 @@
-window.onscroll = function() {scrollFunction()};
+const sections = document.querySelectorAll("section");
+const navLi = document.querySelectorAll("nav .container ul li");
+window.onscroll = () => {
+  var current = "";
 
-function scrollFunction() {
-  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-    document.querySelector(".navbar").style.backgroundColor = "#f8f8f8";
-  } else {
-    document.querySelector(".navbar").style.backgroundColor = "#333";
-  }
-}
-
-// Add click event listeners to the navigation links
-document.querySelectorAll('.navbar a').forEach(function(element) {
-  element.addEventListener('click', function() {
-    // Remove the 'active' class from all navigation links
-    document.querySelectorAll('.navbar a').forEach(function(element) {
-      element.classList.remove('active');
-    });
-
-    // Add the 'active' class to the clicked navigation link
-    this.classList.add('active');
-
-    // Change the background color of the page
-    document.body.style.backgroundColor = this.href.split('#')[1];
+  sections.forEach((section) => {
+    const sectionTop = section.offsetTop;
+    if (pageYOffset >= sectionTop - 60) {
+      current = section.getAttribute("id"); }
   });
-});
+
+  navLi.forEach((li) => {
+    li.classList.remove("active");
+    if (li.classList.contains(current)) {
+      li.classList.add("active");
+    }
+  });
+};
