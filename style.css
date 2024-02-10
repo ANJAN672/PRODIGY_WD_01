@@ -1,62 +1,100 @@
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
 
 * {
-padding: 0;
-margin: 0;
-box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
+
 html {
-font-family: "Ubuntu";
-font-size: 15px;
-scroll-behavior: smooth;
-background-color: #42523f;
+    font-family: "Ubuntu";
+    font-size: 15px;
+    scroll-behavior: smooth;
+    background-color: #42523f;
 }
+
 section {
-height: 100vh;
-width: 100%;
-background-color: #7e8081;
-display: flex;
-align-items: center;
-justify-content: center;
-text-transform: uppercase;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
 }
+
 #home {
-background-color: #1C8106;
+    background-color: #4bffa5;
+    transition: background-color 0.3s ease; /* Smoothing the background-color transition */
 }
+
 #about {
-background-color: #6081C3;
+    background-color: #71e7f1;
+    transition: background-color 0.3s ease; /* Smoothing the background-color transition */
 }
+
+#contact {
+    background-color: #ff6ae4;
+    transition: background-color 0.3s ease; /* Smoothing the background-color transition */
+}
+
 #footer {
-background-color: #A83E11;
+    background-color: #9f87fb;
+    transition: background-color 0.3s ease; /* Smoothing the background-color transition */
 }
+
 nav {
-position: sticky;
-top: 0;
-background-color: #eef0f1;
-border-radius:0 0 20px 20px;
+    position: sticky;
+    top: 0;
+    background-color: #eef0f1;
+    border-radius: 0 0 20px 20px;
 }
+
 nav .container {
-width: 90%;
-max-width: 1000px;
-margin: 0 auto;
-text-align: center;
-padding: 10px;
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 10px;
 }
+
 nav .container ul li {
-display: inline-block;
-border-radius:5px;
+    display: inline-block;
+    border-radius: 5px;
 }
+
 nav .container ul li a {
-display: inline-block;
-text-decoration: none;
-padding: 10px 20px;
-color: black;
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px 20px;
+    color: black;
 }
+
 nav .container ul li.active {
-background-color: #3b49df;
-border-radius:30px;
-transition: 0.3s;
+    background-color: #3b49df;
+    border-radius: 30px;
+    transition: background-color 0.3s ease; /* Smoothing the background-color transition */
 }
+
 nav .container ul li.active a {
-color: #ffffff;
+    color: #ffffff;
+}
+
+nav .container ul li.active:hover {
+    background-color: #a5ff4b;
+    border-radius: 30px;
+}
+
+nav .container ul li:hover {
+    background-color: #f171e7;
+    border-radius: 30px;
+}
+
+nav .container ul li a:hover {
+    background-color: #7b5cc2;
+    border-radius: 30px;
+}
+
+nav .container ul li.active a:hover {
+    background-color: #fb879f;
+    border-radius: 30px;
 }

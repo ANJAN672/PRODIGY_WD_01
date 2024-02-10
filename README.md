@@ -1,11 +1,9 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
+# Reactive-Menu-Using-HTML-CSS-JS
+Created an interactive navigation menu that changes color or style when scrolled or when hovering over a menu item. The navigation menu should have a fixed position and be visible on all pages. Use HTML to structure the menu, CSS to style it, and JavaScript to add interactivity, such as changing the background color or font color of the menu when it is scrolled or when a menu item is hovered over.
 
-  <nav>
+### Example
+```html
+    <nav>
     <div class="container">
         <ul>
             <li class="home active"><a href="#home">HOME</a></li>
@@ -27,6 +25,9 @@
 <section id="footer">
     <h1>This page is created in 2024</h1>
 </section>
-<script src="script.js"></script>
-</body>
-</html>
+```
+### Browser Support
+- Chrome
+- Firefox
+- Safari
+- Opera
